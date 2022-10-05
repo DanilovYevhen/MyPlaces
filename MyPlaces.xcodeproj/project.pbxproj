@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		15158C4028C20243004C39B2 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15158C3F28C20243004C39B2 /* StorageManager.swift */; };
-		3AD5AE45DEB9602D30D2113B /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906EC049878B3C7C6264DA6C /* Pods_MyPlaces.framework */; };
 		A82E5BE521A5315800BD5158 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82E5BE421A5315800BD5158 /* NewPlaceViewController.swift */; };
 		A895AEC921934CA7006ACC1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895AEC821934CA7006ACC1B /* AppDelegate.swift */; };
 		A895AECE21934CA7006ACC1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A895AECC21934CA7006ACC1B /* Main.storyboard */; };
@@ -17,12 +16,12 @@
 		A895AEDB21934D16006ACC1B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895AEDA21934D16006ACC1B /* MainViewController.swift */; };
 		A8DB6820219BDB0700CD36D5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB681F219BDB0700CD36D5 /* CustomTableViewCell.swift */; };
 		A8DB6865219DA4BE00CD36D5 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */; };
+		C8A8F1E31029E50B0E0C56A1 /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC602175D02EB97B89FFF2E3 /* Pods_MyPlaces.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15158C3F28C20243004C39B2 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		4DEEDB06A13CF4101640A757 /* Pods-MyPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.release.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.release.xcconfig"; sourceTree = "<group>"; };
-		906EC049878B3C7C6264DA6C /* Pods_MyPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48D3A086573948B1D741352D /* Pods-MyPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.release.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.release.xcconfig"; sourceTree = "<group>"; };
 		A82E5BE421A5315800BD5158 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		A895AEC521934CA7006ACC1B /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A895AEC821934CA7006ACC1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +32,8 @@
 		A895AEDA21934D16006ACC1B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8DB681F219BDB0700CD36D5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
-		EE5B6F591E0453851F05F04E /* Pods-MyPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.debug.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.debug.xcconfig"; sourceTree = "<group>"; };
+		AC602175D02EB97B89FFF2E3 /* Pods_MyPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4144D66DCD421F403A6DD48 /* Pods-MyPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.debug.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,18 +41,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD5AE45DEB9602D30D2113B /* Pods_MyPlaces.framework in Frameworks */,
+				C8A8F1E31029E50B0E0C56A1 /* Pods_MyPlaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		273CDEE8C37A87C525C4C23E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC602175D02EB97B89FFF2E3 /* Pods_MyPlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		928939A73F675AF58D165DF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EE5B6F591E0453851F05F04E /* Pods-MyPlaces.debug.xcconfig */,
-				4DEEDB06A13CF4101640A757 /* Pods-MyPlaces.release.xcconfig */,
+				E4144D66DCD421F403A6DD48 /* Pods-MyPlaces.debug.xcconfig */,
+				48D3A086573948B1D741352D /* Pods-MyPlaces.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -63,7 +71,7 @@
 				A895AEC721934CA7006ACC1B /* MyPlaces */,
 				A895AEC621934CA7006ACC1B /* Products */,
 				928939A73F675AF58D165DF8 /* Pods */,
-				F868094AB88DD315699413FB /* Frameworks */,
+				273CDEE8C37A87C525C4C23E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,14 +100,6 @@
 			path = MyPlaces;
 			sourceTree = "<group>";
 		};
-		F868094AB88DD315699413FB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				906EC049878B3C7C6264DA6C /* Pods_MyPlaces.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,11 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A895AED721934CA8006ACC1B /* Build configuration list for PBXNativeTarget "MyPlaces" */;
 			buildPhases = (
-				ADF7795D7C6243ECA3293354 /* [CP] Check Pods Manifest.lock */,
+				5918C1840F39123BA912CE13 /* [CP] Check Pods Manifest.lock */,
 				A895AEC121934CA7006ACC1B /* Sources */,
 				A895AEC221934CA7006ACC1B /* Frameworks */,
 				A895AEC321934CA7006ACC1B /* Resources */,
-				9D4AB6C5DFC38855E77FC23B /* [CP] Embed Pods Frameworks */,
+				378EF088542885A15006463D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,7 +170,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9D4AB6C5DFC38855E77FC23B /* [CP] Embed Pods Frameworks */ = {
+		378EF088542885A15006463D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,7 +187,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyPlaces/Pods-MyPlaces-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ADF7795D7C6243ECA3293354 /* [CP] Check Pods Manifest.lock */ = {
+		5918C1840F39123BA912CE13 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,7 +365,7 @@
 		};
 		A895AED821934CA8006ACC1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE5B6F591E0453851F05F04E /* Pods-MyPlaces.debug.xcconfig */;
+			baseConfigurationReference = E4144D66DCD421F403A6DD48 /* Pods-MyPlaces.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,7 +384,7 @@
 		};
 		A895AED921934CA8006ACC1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DEEDB06A13CF4101640A757 /* Pods-MyPlaces.release.xcconfig */;
+			baseConfigurationReference = 48D3A086573948B1D741352D /* Pods-MyPlaces.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
