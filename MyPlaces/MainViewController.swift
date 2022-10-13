@@ -20,7 +20,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     private var ascendingSorting = true
     private var places: Results<Place>!
     // создаём экземпляр класса UISearchController, данный клас позволяет взаимодействовать с строкой поиска
-    // непосредственно за сам поиск отвечают методы протокола UISearchResultsUpdating которые ищут содержимое по текущему VC и отправляют результат в UISearchController
+    // непосредственно за сам поиск отвечают методы протокола UISearchResultsUpdating которые ищут содержимое по текущему // VC и отправляют результат в UISearchController
     private let searchController = UISearchController(searchResultsController: nil)
     private var filteredPlaces: Results<Place>!
     private var searchBarIsEmty: Bool {
@@ -65,27 +65,37 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         return places.isEmpty ? 0 : places.count
    }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
-
-        let place = places[indexPath.row]
-
+        var place = Place()
+        if isFiltering {
+            place = filteredPlaces[indexPath.row]
+        } else {
+            place = places[indexPath.row]
+        }
         cell.nameLabel.text = place.name
         cell.locationLabel.text = place.location
         cell.typeLabel.text = place.type
         cell.imageOfPlace.image = UIImage(data: place.imageData!)
         cell.imageOfPlace.layer.cornerRadius = cell.imageOfPlace.frame.size.height / 2
         cell.imageOfPlace.clipsToBounds = true
-
         return cell
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        80
+    }
+    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             guard let indexPath: IndexPath = tableView.indexPathForSelectedRow else { return }
-            let place = places[indexPath.row]
+            let place: Place
+            if isFiltering {
+                place = filteredPlaces[indexPath.row]
+            } else {
+                place = places[indexPath.row]
+            }
             let newPlaceVC = segue.destination as! NewPlaceViewController
             newPlaceVC.currentPlace = place
         }
@@ -111,6 +121,9 @@ sorting()
     
     // MARK: - Table view delegate
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let place = places [indexPath.row]
         let deleteAction = UITableViewRowAction(style:.default, title: "Delete") { _, _ in
@@ -120,6 +133,8 @@ sorting()
         return [deleteAction]
     }
 }
+
+// MARK: - Extension
 
 extension MainViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
