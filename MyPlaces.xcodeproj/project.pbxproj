@@ -17,6 +17,7 @@
 		A8DB6820219BDB0700CD36D5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB681F219BDB0700CD36D5 /* CustomTableViewCell.swift */; };
 		A8DB6865219DA4BE00CD36D5 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */; };
 		C0130CE528EEF8AE00B829E6 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0130CE428EEF8AE00B829E6 /* RatingControl.swift */; };
+		C0E314E928F9B9CE00D0F832 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E314E828F9B9CE00D0F832 /* MapViewController.swift */; };
 		C8A8F1E31029E50B0E0C56A1 /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC602175D02EB97B89FFF2E3 /* Pods_MyPlaces.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		AC602175D02EB97B89FFF2E3 /* Pods_MyPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0130CE428EEF8AE00B829E6 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		C0E314E828F9B9CE00D0F832 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E4144D66DCD421F403A6DD48 /* Pods-MyPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.debug.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */,
 				15158C3F28C20243004C39B2 /* StorageManager.swift */,
 				A8DB681F219BDB0700CD36D5 /* CustomTableViewCell.swift */,
+				C0E314E828F9B9CE00D0F832 /* MapViewController.swift */,
 				C0130CE428EEF8AE00B829E6 /* RatingControl.swift */,
 				A895AECC21934CA7006ACC1B /* Main.storyboard */,
 				A895AECF21934CA8006ACC1B /* Assets.xcassets */,
@@ -132,7 +135,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = "Alexey Efimov";
 				TargetAttributes = {
 					A895AEC421934CA7006ACC1B = {
@@ -226,6 +229,7 @@
 				15158C4028C20243004C39B2 /* StorageManager.swift in Sources */,
 				A895AEC921934CA7006ACC1B /* AppDelegate.swift in Sources */,
 				A895AEDB21934D16006ACC1B /* MainViewController.swift in Sources */,
+				C0E314E928F9B9CE00D0F832 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +281,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -338,6 +343,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

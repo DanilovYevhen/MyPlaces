@@ -23,4 +23,23 @@ class StorageManager {
             realm.delete(place)
         }
     }
+    static func seedData() {
+
+              let places = realm.objects(Place.self)
+              
+              guard places.count == 0 else { return }
+              let restaurantNames = [
+                        "Burger Heroes", "Kitchen", "Bonsai", "Дастархан",
+                        "Индокитай", "X.O", "Балкан Гриль", "Sherlock Holmes",
+                        "Speak Easy", "Morris Pub", "Вкусные истории",
+                        "Классик", "Love&Life", "Шок", "Бочка"
+                    ]
+              for element in restaurantNames {
+                  let newPlace = Place(name: element,
+                                       location: "Uzgorod",
+                                       type: "restoraunt",
+                                       imageData: UIImage(named: element)?.pngData())
+                  StorageManager.saveObject(newPlace)
+              }
+          }
 }

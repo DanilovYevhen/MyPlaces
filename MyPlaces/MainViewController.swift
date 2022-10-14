@@ -35,6 +35,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        StorageManager.seedData()
         
         // Setup the search controller
         searchController.searchResultsUpdater = self
